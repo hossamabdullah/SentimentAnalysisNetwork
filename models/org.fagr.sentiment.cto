@@ -1,0 +1,12 @@
+namespace org.fagr.sentiment
+
+asset Sentence identified by sentenceId{
+  o String sentenceId
+  o String content
+  o SentimentValues sentiment
+}
+
+enum SentimentValues{
+  o GOOD
+  o BAD
+}
