@@ -1,5 +1,14 @@
 namespace org.fagr.sentiment
 
+asset Topic identified by topicId{
+  o String topicId
+  o Double goodReviewNum
+  o Double badReviewNum
+  o String sentimentResult
+  o DateTime updateDate
+  --> Sentence[] Sentences 
+}
+
 asset Sentence identified by sentenceId{
   o String sentenceId
   o String content
