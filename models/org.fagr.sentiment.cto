@@ -2,6 +2,7 @@ namespace org.fagr.sentiment
 
 asset Topic identified by topicId{
   o String topicId
+  o String keyword
   o Double goodReviewNum
   o Double badReviewNum
   o String sentimentResult
