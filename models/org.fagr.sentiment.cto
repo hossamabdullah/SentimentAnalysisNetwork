@@ -13,7 +13,7 @@ asset Sentence identified by sentenceId{
   o String sentenceId
   o String content
   o SentimentValues sentiment
-  o String[] narKeywords
+  o String[] NARKeywords
   --> Topic topic
 }
 
