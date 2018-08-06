@@ -7,13 +7,13 @@ asset Topic identified by topicId{
   o Double badReviewNum
   o String sentimentResult
   o DateTime updateDate
-  --> Sentence[] Sentences 
 }
 
 asset Sentence identified by sentenceId{
   o String sentenceId
   o String content
   o SentimentValues sentiment
+  --> Topic topic
 }
 
 enum SentimentValues{
