@@ -1,0 +1,17 @@
+/**
+ * New query file
+ */
+query selectAssetByOwner{
+	description: "Select topics based on keyword"
+	statement:
+  		SELECT org.fagr.sentiment.Topic 
+  			WHERE ( keyword == _$keyword)
+}
+
+
+query selectAssetByType{
+	description: "select Sentences based on topic"
+	statement:
+  		SELECT org.fagr.sentiment.Sentence
+  			WHERE ( topic == _$topic )
+}
