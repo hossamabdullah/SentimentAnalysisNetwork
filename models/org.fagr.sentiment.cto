@@ -5,7 +5,7 @@ asset Topic identified by topicId{
   o String keyword
   o Double goodReviewNum
   o Double badReviewNum
-  o String sentimentResult
+  o SentimentValues sentimentResult
   o DateTime updateDate
 }
 
@@ -13,11 +13,13 @@ asset Sentence identified by sentenceId{
   o String sentenceId
   o String content
   o SentimentValues sentiment
-  o String[] NARKeywords
+  o String[] NERKeywords
+  o String[] TopicModelingValues
   --> Topic topic
 }
 
 enum SentimentValues{
-  o GOOD
-  o BAD
+  o POSITIVE
+  o NEGATIVE
+  o NEUTRAL
 }
