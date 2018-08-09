@@ -1,7 +1,7 @@
 /**
  * New query file
  */
-query selectAssetByOwner{
+query selectTopicWithKeyword{
 	description: "Select topics based on keyword"
 	statement:
   		SELECT org.fagr.sentiment.Topic 
@@ -9,7 +9,7 @@ query selectAssetByOwner{
 }
 
 
-query selectAssetByType{
+query selectSentenceWithTopic{
 	description: "select Sentences based on topic"
 	statement:
   		SELECT org.fagr.sentiment.Sentence
