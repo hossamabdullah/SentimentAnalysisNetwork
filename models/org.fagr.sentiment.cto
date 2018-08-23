@@ -5,6 +5,7 @@ asset Topic identified by topicId{
   o String keyword
   o Double goodReviewNum
   o Double badReviewNum
+  o Double neuralReviewNum
   o SentimentValues sentimentResult
   o DateTime updateDate
 }
